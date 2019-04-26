@@ -1,0 +1,13 @@
+<h1>Publish New Article</h1>
+<form method="POST" action="/articles/<%= @article.id %>">
+  <input type="hidden" method="_method" value="patch">
+  <label for="Article_Title">Article Title:</label><br>
+  <input id="Article_Title"  type="text" name="article[title]" value="<%  @article.title %>">
+  <label for="Article_Content">Article Content:</label><br>
+  <input id="Article_Content"  type="text" name="article[content]" value="<%= @article.content %>">
+  <input type="submit" value="Submit">
+</form>
+
+
+
+  

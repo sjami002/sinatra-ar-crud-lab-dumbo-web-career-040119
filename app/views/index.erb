@@ -1,0 +1,11 @@
+<h1>Publisher's Weekly</h1>
+
+<ol>
+  <% @article.each do |article| %>
+  <a href="/articles/<%= @article.id  %>"></a>
+  <li><h3><%= @article.title %></h3></li>
+  <li><p><%= @article.content %></p></li>
+  
+</ol>
+
+<a href="/articles/new">Create A New Article</a>
